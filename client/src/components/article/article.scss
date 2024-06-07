@@ -1,0 +1,63 @@
+@import "../../responsive.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+.article {
+  padding: 10px;
+  border-bottom: 0.5px dashed;
+
+  .label {
+    color: maroon;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+
+    @include md {
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: "Times New Roman", sans-serif;
+    font-weight: 500;
+
+    @include md {
+      font-size: 14px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .time {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 0;
+    font-family: "Times New Roman", sans-serif;
+  }
+  .notes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    p {
+      color: gray;
+      font-size: 16px;
+      
+      @include md {
+        font-size: 12px;
+      }
+    }
+    img {
+      padding-left: 10px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+
+      @include md{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

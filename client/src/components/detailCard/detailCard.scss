@@ -1,0 +1,65 @@
+.note-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding: 1em;
+  max-width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative; /* Added for close button positioning */
+
+  .title {
+    color: #0f2c59;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+  }
+
+  .details {
+    color: #333;
+    font-family: "Lexend", sans-serif;
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+
+    .btn {
+      padding: 0.5em 1em;
+      font-size: 1.1em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #f4f0e4;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover {
+        scale: 1.05;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    }
+
+    .red {
+      background: #d33;
+    }
+
+    .blue {
+      background: #3085d6;
+    }
+  }
+
+  .closeBtn {
+    position: absolute;
+    font-family: "Lexend", sans-serif;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+  }
+}

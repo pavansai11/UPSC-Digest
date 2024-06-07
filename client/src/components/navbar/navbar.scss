@@ -1,0 +1,125 @@
+@import "../../responsive.scss";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+.navbar {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  @include sm {
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background-color: #eeeeee;
+  }
+
+  hr {
+    border: 1px solid gray;
+    width: 100%;
+    @include sm {
+      display: none;
+    }
+  }
+
+  @include sm {
+    flex-direction: row;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 64px;
+
+    @include md {
+      font-size: 48px;
+    }
+
+    @include sm {
+      font-size: 28px;
+      padding-left: 10px;
+    }
+
+    img {
+      width: 40px;
+      height: 60px;
+      object-fit: cover;
+
+      @include sm {
+        width: 20px;
+        height: 30px;
+      }
+    }
+  }
+  .menuIcon {
+    display: none;
+
+    img {
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+    @include sm {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }
+
+  .menu {
+    display: flex;
+    padding: 10px 0;
+    font-size: 16px;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        scale: 1.05;
+      }
+    }
+
+    &.active {
+      right: 0;
+    }
+
+    @include sm {
+      position: absolute;
+      top: 0;
+      right: -50%;
+      background-color: black;
+      height: 100vh;
+      width: 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: initial;
+        color: white;
+      }
+    }
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .closeBtn {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    @include sm {
+      display: block;
+    }
+  }
+}

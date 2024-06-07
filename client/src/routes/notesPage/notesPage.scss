@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+.headline {
+  text-align: center;
+  margin-top: 1em;
+}
+.headline span {
+  color: #f5400f;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  margin-top: 2em;
+  padding: 2em;
+  background-color: rgb(249, 245, 245);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.note-form textarea,
+.note-form input,
+.note-form button {
+  min-width: 300px;
+  padding: 1em;
+  font-size: 1.1em;
+  font-family:'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff;
+  resize: none;
+  outline: 2px solid #f9b6a3;
+  letter-spacing: 1px;
+}
+
+.note-form button {
+  background: linear-gradient(#045c26, #088310);
+  outline: none;
+  color: #fff;
+  font-size: 1.4em;
+  padding: 0.5em 1em;
+  letter-spacing: 0px;
+  cursor: pointer;
+
+  &:hover{
+    scale:1.05;
+  }
+}
+
+.container {
+  padding: 1em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+  margin: 2em 0;
+  margin-bottom: 100px;
+}
+
