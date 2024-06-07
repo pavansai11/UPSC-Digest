@@ -68,4 +68,4 @@ The React application will run on port 3000.
 - Puppeteer for web scraping.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
